@@ -37,6 +37,7 @@
 .login__title {
     color: var(--deep-grey);
     font-size: 1.5em;
+    margin-bottom: 30px;
 }
 
 .login__label {
@@ -48,11 +49,54 @@
 .input {
     width: 100%;
     background-color: var(--light-gray);
-    border: none;
+    border: 2px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
     outline: none;
     font-size: 0.9em;
     padding: 25px 10px 10px;
     font-weight: 600;
     color: var(--deep-grey);
+}
+
+.login__label span {
+    position: absolute;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--medium-grey);
+    margin: 20px;
+    cursor: text;
+    transition: all 200ms ease;
+}
+
+.input:focus {
+    background-color: var(--whitesmoke);
+    border: 2px solid var(--deep-grey);
+}
+
+.login__label .span-active {
+    font-size: 0.7em;
+    margin: 8px 10px;
+}
+
+.login__icons {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.login__icons img {
+    width: 20px;
+}
+
+.icons__button {
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
 }
