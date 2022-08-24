@@ -100,3 +100,15 @@
     cursor: pointer;
     border: none;
 }
+
+.login__icons .icons__button:nth-child(1) {
+    background-color: var(--blue);
+}
+
+.login__icons .icons__button:nth-child(2) {
+    background-color: var(--light-gray);
+}
+
+.login__icons .icons__button:nth-child(3) {
+    background-color: var(--black);
+}
